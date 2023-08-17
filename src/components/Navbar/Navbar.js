@@ -10,32 +10,28 @@ const Navbar = () => {
                     <i className="fa fa-home w3-xxlarge"></i>
                     <p>HOME</p>
                 </a>
-                <a href="#mover"
+                   
+                    <a href="#mover"
                     className="w3-bar-item w3-button w3-padding-large w3-hover-black">
-                    <i className="fa fa-user w3-xxlarge"></i>
-                    <p>MOVERS</p>
+                    <i className="fa fa-bullhorn w3-xxlarge"></i>
+                    <p>GOALS</p>
                 </a>
+          
                 <a href="#customers"
                     className="w3-bar-item w3-button w3-padding-large w3-hover-black">
                     <i className="fa fa-eye w3-xxlarge"></i>
                     <p>CUSTOMERS</p>
                 </a>
+                <a href="#mover"
+                    className="w3-bar-item w3-button w3-padding-large w3-hover-black">
+                    <i className="fa fa-truck w3-xxlarge"></i>
+                    <p>MOVERS</p>
+</a>
                 <a href="#contact"
                     className="w3-bar-item w3-button w3-padding-large w3-hover-black">
                     <i className="fa fa-envelope w3-xxlarge"></i>
                     <p>CONTACT</p>
                     
-                </a>
-                <a href="#mover"
-                    className="w3-bar-item w3-button w3-padding-large w3-hover-black">
-                    <i className="fa fa-truck w3-xxlarge"></i>
-                    <p>MOVERS</p>
-
-                    </a>
-                    <a href="#mover"
-                    className="w3-bar-item w3-button w3-padding-large w3-hover-black">
-                    <i className="fa fa-bullhorn w3-xxlarge"></i>
-                    <p>NEWS</p>
                 </a>
                 <a href="#mover"
                     className="w3-bar-item w3-button w3-padding-large w3-hover-black">
