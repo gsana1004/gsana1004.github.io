@@ -1,0 +1,51 @@
+.w3-sidebar {
+    width: 120px;background: #222;
+}
+.w3-sidebar a p {
+    margin: 12px 0;
+}
+
+#main {
+    margin-left: 120px;
+}
+.default, .success {
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    opacity: var(--o, 1);
+    transition: opacity .3s;
+}
+.truck-button {
+    padding: 12px 0;
+    width: 172px;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    border: none;
+    outline: none;
+    color: #232222;
+    background: #343434;
+    border-radius: var(--br, 5px);
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+    transform-style: preserve-3d;
+    transform: rotateX(var(--rx, 0deg)) translateZ(0);
+    box-shadow: #545454;
+    transition: transform .5s, border-radius .3s linear var(--br-d, 0s);
+}
+.paddingTop-64{
+    padding-top: 64px;
+}
+
+@media only screen and (min-width: 600px) {
+  
+}
+
+@media only screen and (max-width: 600px) {
+    #main {
+        margin-left: 0;
+    }
+    
+}
+
