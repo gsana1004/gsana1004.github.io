@@ -4,6 +4,8 @@ import Contact from '../../components/Contact/Contact';
 import HireDriver from '../../components/HireDriver/HireDriver';
 import Navbar from '../../components/Navbar/Navbar';
 import Banner from '../../components/Banner/Banner';
+import CEOPage from '../../components/CEOPage';
+
 // import Chatbot from '../../components/Chatbot';
 import AppVideo from '../../components/AppVideo/AppVideo';
 import VideoPlayer from '../../components/VideoPlayer/VideoPlayer';
@@ -21,6 +23,7 @@ const Home = () => {
             <DriverApplication/>
         <Contact/>
         <Footer/>
+        <CEOPage/>
         </div>
     );
 };

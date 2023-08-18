@@ -19,7 +19,15 @@ const DriverSalary = () => {
             <span className="w3-opacity">Average Pay Per Move</span>
             </li>
             <li className="w3-light-grey w3-padding-24">
-            <button className="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+            <button 
+    className="w3-button w3-white w3-padding-large w3-hover-black"
+    onClick={() => {
+        document.getElementById('driver-application').scrollIntoView({ behavior: 'smooth' });
+    }}
+>
+    Sign Up
+</button>
+
             </li>
             </ul>
             </div>
@@ -36,7 +44,14 @@ const DriverSalary = () => {
             <span className="w3-opacity">Average Pay Per Move</span>
             </li>
             <li className="w3-light-grey w3-padding-24">
-            <button className="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+            <button 
+    className="w3-button w3-white w3-padding-large w3-hover-black"
+    onClick={() => {
+        document.getElementById('driver-application').scrollIntoView({ behavior: 'smooth' });
+    }}
+>
+    Sign Up
+</button>
             </li>
             </ul>
             </div>
