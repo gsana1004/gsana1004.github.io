@@ -13,7 +13,7 @@ function CEOPage() {
 
     return (
         <div>
-            <h1>Submitted Applications</h1>
+            <h1></h1>
             <ul>
                 {applications.map(application => (
                     <li key={application._id}>

@@ -1,50 +1,86 @@
-.w3-sidebar {
-    width: 120px;background: #222;
-}
-.w3-sidebar a p {
-    margin: 12px 0;
+/* Global Styles */
+body, html {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
+/* Navbar Styles */
+.w3-sidebar {
+    width: 120px;
+    background: #222;
+}
+
+.w3-sidebar a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 0;
+    text-align: center;
+}
+
+.w3-sidebar a p {
+    margin: 0;
+}
+
+.w3-sidebar a:hover {
+    background: #333;
+}
+
+/* Main Content Styles */
 #main {
     margin-left: 120px;
+    padding: 16px;
 }
-.default, .success {
-    display: block;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 24px;
-    opacity: var(--o, 1);
-    transition: opacity .3s;
-}
+
+/* Button Styles */
 .truck-button {
     padding: 12px 0;
     width: 172px;
     cursor: pointer;
     text-align: center;
-    position: relative;
     border: none;
     outline: none;
-    color: #232222;
+    color: #acacac;
     background: #343434;
-    border-radius: var(--br, 5px);
-    -webkit-appearance: none;
-    -webkit-tap-highlight-color: transparent;
-    transform-style: preserve-3d;
-    transform: rotateX(var(--rx, 0deg)) translateZ(0);
-    box-shadow: #545454;
-    transition: transform .5s, border-radius .3s linear var(--br-d, 0s);
-}
-.paddingTop-64{
-    padding-top: 64px;
+    border-radius: 5px;
+    transition: transform 0.5s, border-radius 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-@media only screen and (min-width: 600px) {
-  
-}
-
+/* Responsive Styles */
 @media only screen and (max-width: 600px) {
     #main {
         margin-left: 0;
     }
-    
+}
+
+/* CEO ONLY Link Styles */
+.ceo-only-link {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    opacity: 0;  /* Initially invisible */
+    transition: opacity 0.3s ease-in-out;
+    z-index: 1000;  /* Ensure it's above other elements */
+}
+
+.ceo-only-link:hover {
+    opacity: 1;  /* Visible on hover */
+}
+
+.ceo-only-link a {
+    color: #fff;
+    background-color: #222;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.ceo-only-link p {
+    margin: 0;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../App.css';
 
 const Contact = () => {
     return (
@@ -8,7 +9,7 @@ const Contact = () => {
         <hr style={{width:"200px"}} className="w3-opacity" />
 
         <div className="w3-section">
-        <p className='w3-text-grey' style={{margin:"15px 0"}}><i className="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> New York, US</p>
+        <p className='w3-text-grey' style={{margin:"15px 0"}}><i className="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> 11 Broadway St, New York, US</p>
         <p className='w3-text-grey' style={{margin:"15px 0"}}><i className="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +1 516-830-0428</p>
         <p className='w3-text-grey' style={{margin:"15px 0"}}><i className="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: EZMoving@gmail.com</p>
         </div><br/>

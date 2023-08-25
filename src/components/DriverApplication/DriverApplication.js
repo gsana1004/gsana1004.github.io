@@ -1,24 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
+import Counter from './Counter';
+import DriverSalary from './DriverSalary';
 
 const DriverApplication = () => {
-    const [name, setName] = useState('');
-    const [emailOrNumber, setEmailOrNumber] = useState('');
-    const [capability, setCapability] = useState('');
-    const [resume, setResume] = useState(null);
-
-    const handleSubmit = () => {
-        // Send the data to the backend
-        const formData = new FormData();
-        formData.append('name', name);
-        formData.append('emailOrNumber', emailOrNumber);
-        formData.append('capability', capability);
-        formData.append('resume', resume);
-
-        fetch('/api/submitApplication', {
-            method: 'POST',
-            body: formData
-        });
-    };
+    const [showFileInput, setShowFileInput] = useState(false);
+    const fileInputRef = useRef(null);
 
     return (
         <div id='driver-application'>
@@ -40,7 +26,7 @@ const DriverApplication = () => {
                     </div>
                     <Counter/>
 
-                    <button 
+                   <button 
                 className="w3-button w3-light-grey w3-padding-large w3-section"
                 onClick={() => fileInputRef.current.click()}
             >
@@ -59,7 +45,7 @@ const DriverApplication = () => {
                     }
                 }}
             />
-
+.
                     <button className="w3-button w3-light-grey w3-padding-large w3-section">
                     <i className="fa fa-download"></i> Submit Application
                     </button>
